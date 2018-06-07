@@ -51,7 +51,7 @@ fi
 xset +fp ~/.fonts
 xset +fp /usr/share/fonts/local 
 xset fp rehash 
-hsetroot -tile ~/.arch-dots/2x2.png
+hsetroot -tile ~/.2x2.png
 
 # twm &
 # xclock -geometry 50x50-1+1 &
