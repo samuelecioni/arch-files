@@ -1,0 +1,31 @@
+#include "/home/samuele/.colors/s3r0"
+
+urxvt*cursorBlink: true
+urxvt*scrollBar:		false
+urxvt*depth:			32 
+urxvt*internalBorder: 		5
+urxvt*dynamicColors: on
+urxvt.urgentOnBell:  true
+
+!urxvt*font: -*-lemon-*-*-*-*-11-*-*-*-*-*-*-*
+!urxvt*boldFont: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+!urxvt*italicFont: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+!urxvt*bolditalicFont: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+
+!urxvt*font: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+!urxvt*boldFont: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+!urxvt*italicFont: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+!urxvt*bolditalicFont: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+
+urxvt*font: -gohu-gohufont-medium-*-normal-*-11-*-*-*-*-*-*-*
+urxvt*boldFont: -gohu-gohufont-bold-*-normal-*-11-*-*-*-*-*-*-*
+urxvt*italicFont: -gohu-gohufont-medium-*-normal-*-11-*-*-*-*-*-*-*
+urxvt*bolditalicFont: -gohu-gohufont-bold-*-normal-*-11-*-*-*-*-*-*-*
+
+Xft.dpi: 180
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
