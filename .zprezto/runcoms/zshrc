@@ -1,0 +1,38 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CONFIG_HOME
+
+PANEL_FIFO=/tmp/panel-fifo
+export PANEL_FIFO
+
+source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ALT-I - Paste the selected entry from locate output into the command line
+fzf-locate-widget() {
+  local selected
+  if selected=$(locate / | fzf -q "$LBUFFER"); then
+    LBUFFER=$selected
+  fi
+  zle redisplay
+}
+zle     -N    fzf-locate-widget
+bindkey '\ei' fzf-locate-widget
+
+# completion for aliases
+setopt no_complete_aliases
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
