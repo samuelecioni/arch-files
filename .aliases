@@ -1,2 +1,2 @@
 # update mirrorlist to the latest and fastest mirrors
-sudo reflector --age 8 --fastest 128 --latest 64 --number 32 --sort rate --save /etc/pacman.d/mirrorlist
+alias mirror-update ='sudo reflector --age 8 --fastest 128 --latest 64 --number 32 --sort rate --save /etc/pacman.d/mirrorlist'
